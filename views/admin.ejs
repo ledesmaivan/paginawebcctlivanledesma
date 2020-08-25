@@ -12,6 +12,7 @@
 
 
 <head>
+    <form id="form-admin">
 <body>
 
     <img src="img/logo.png" width="350px">
@@ -19,7 +20,7 @@
 
 
 
-    <div class="input-group mb-1">
+    <div class="input-group mb-1 mt-3">
         <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon-usuario">
 
@@ -29,10 +30,30 @@
         <input id="usuario_usuario" name="usuario_usuario" type="text" class="form-control" placeholder="Usuario"
             aria-label="Usuario" aria-describedby="basic-usuario">
     </div>
+    <div class="input-group mb-1">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon-Contraseña">
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/admin.js"></script>
+                <i class="fas fa-unlock-alt"></i>
 
+            </span>
+        </div>
+        <input id="clave_usuario" name="clave_usuario" type="password" class="form-control" placeholder="Contraseña"
+            aria-label="Contraseña" aria-describedby="basic-clave">
+    </div>
+    <div class="btn-group d-flex" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">
+            <i class="fas fa-sign-in-alt"></i>Ingresar
+        </button>
+        
+        <button type="button" class="btn btn-danger">
+            <i class="fas fa-sign-out-alt"></i>Salir
+        </button>
+      </div>
+    
+</form>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/admin.js"></script>
 </body>
 </head>
